@@ -8,10 +8,10 @@ section .text
 
 _start:
     sub rsp, 40
-    xor r9, r9
+    mov r9, 0
     lea r8, [hello]
-    xor rdx, rdx
-    xor rcx, rcx
+    mov rdx, 0
+    mov rcx, 0
     call __imp_MessageBoxA
-    xor ecx, ecx
+    mov ecx, 0
     call __imp_ExitProcess
